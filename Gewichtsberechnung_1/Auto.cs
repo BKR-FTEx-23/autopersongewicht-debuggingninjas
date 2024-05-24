@@ -50,6 +50,11 @@ namespace Gewichtsberechnung_1
             return gesamtGewicht;
         }
 
-      
+        public int AnzahlPersonen()
+        {
+            return personen.Count;
+        }
+
+
     }
 }

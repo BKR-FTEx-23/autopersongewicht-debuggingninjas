@@ -9,6 +9,7 @@ namespace Gewichtsberechnung_1
         {
             InitializeComponent();
             auto = new Auto(1500); // Gewicht des Autos in kg
+            txtAnzahlPersonen.Text = "Anzahl Personen:" + auto.AnzahlPersonen();
         }
 
         private void btnPersonHinzufügen_Click(object sender, EventArgs e)
@@ -19,6 +20,8 @@ namespace Gewichtsberechnung_1
                 auto.Hinzufuegen(person);
                 lstPersonen.Items.Add(gewicht);
                 AktualisiereGesamtgewicht();
+                txtAnzahlPersonen.Text ="Anzahl Personen:"+auto.AnzahlPersonen();
+               
             }
             else
             {
@@ -38,6 +41,7 @@ namespace Gewichtsberechnung_1
                 {
                     lstPersonen.Items.Remove(lstPersonen.SelectedItem);
                     AktualisiereGesamtgewicht();
+                    txtAnzahlPersonen.Text = "Anzahl Personen:" + auto.AnzahlPersonen();
                 }
                 else
                 {
@@ -54,5 +58,7 @@ namespace Gewichtsberechnung_1
         {
             txtAutoGewicht.Text = "Gesamtgewicht: " + auto.Gesamtgewicht() + " kg";
         }
+
+      
     }
 }
