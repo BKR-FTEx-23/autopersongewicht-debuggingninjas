@@ -24,6 +24,7 @@ namespace Gewichtsberechnung_1
             {
                 MessageBox.Show("Bitte geben Sie ein gültiges Gewicht ein.");
             }
+            
         }
 
         private void btnAusgewähltePersonentfernen_Click(object sender, EventArgs e)

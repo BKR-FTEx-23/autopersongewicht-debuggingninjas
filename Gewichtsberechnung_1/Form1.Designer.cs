@@ -33,6 +33,7 @@
             btnPersonHinzufügen = new Button();
             btnAusgewähltePersonentfernen = new Button();
             txtAutoGewicht = new TextBox();
+            txtAnzahlPersonen = new TextBox();
             SuspendLayout();
             // 
             // lstPersonen
@@ -74,14 +75,22 @@
             // 
             txtAutoGewicht.Location = new Point(6, 261);
             txtAutoGewicht.Name = "txtAutoGewicht";
-            txtAutoGewicht.Size = new Size(765, 27);
+            txtAutoGewicht.Size = new Size(630, 27);
             txtAutoGewicht.TabIndex = 4;
+            // 
+            // txtAnzahlPersonen
+            // 
+            txtAnzahlPersonen.Location = new Point(663, 261);
+            txtAnzahlPersonen.Name = "txtAnzahlPersonen";
+            txtAnzahlPersonen.Size = new Size(125, 27);
+            txtAnzahlPersonen.TabIndex = 5;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 316);
+            Controls.Add(txtAnzahlPersonen);
             Controls.Add(txtAutoGewicht);
             Controls.Add(btnAusgewähltePersonentfernen);
             Controls.Add(btnPersonHinzufügen);
@@ -100,5 +109,6 @@
         private Button btnPersonHinzufügen;
         private Button btnAusgewähltePersonentfernen;
         private TextBox txtAutoGewicht;
+        private TextBox txtAnzahlPersonen;
     }
 }

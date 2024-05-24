@@ -19,6 +19,7 @@ namespace Gewichtsberechnung_1
         public void Hinzufuegen(Person p)
         {
             personen.Add(p);
+            
         }
 
         public bool Entfernen(Person p)
@@ -48,5 +49,7 @@ namespace Gewichtsberechnung_1
             }
             return gesamtGewicht;
         }
+
+      
     }
 }
