@@ -9,17 +9,18 @@ namespace Gewichtsberechnung_1
     {
         private List<Person> personen;
         private double autoGewicht;
+        private double fuehrerscheinID;
 
-        public Auto(double autoGewicht)
+        public Auto(double autoGewicht, double fuehrerscheinID)
         {
             this.autoGewicht = autoGewicht;
             personen = new List<Person>();
+            this.fuehrerscheinID = fuehrerscheinID;
         }
 
         public void Hinzufuegen(Person p)
         {
             personen.Add(p);
-            
         }
 
         public bool Entfernen(Person p)
@@ -50,6 +51,6 @@ namespace Gewichtsberechnung_1
             return gesamtGewicht;
         }
 
-      
+
     }
 }
